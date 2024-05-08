@@ -1,0 +1,19 @@
+<h1>List of Contacts</h1>
+<p>hello</p>
+<p>hii from deepak</p>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile Number</th>
+    <th>Contact Person</th>
+  </tr>
+  <tr th:each="contact: ${contactsList}">
+    <td th:text="${contact.id}">Index</td>
+    <td th:text="${contact.name}">Name</td>
+    <td th:text="${contact.email}">Email</td>
+    <td th:text="${contact.mobile}">Mobile</td>
+    <td th:text="${contact.contactPerson}">Contact Person</td>
+  </tr>
+</table>
